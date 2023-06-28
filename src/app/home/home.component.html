@@ -3,14 +3,13 @@
     <div class="navbar header__navbar">
       <div class="navbar__left">
         <div class="logo navbar__logo">
-          <!--alt надо заполнять всегда-->
-          <img src="./assets/logo__icon.svg" class="logo__icon" alt="">
+          <img src="./assets/logo__icon.svg" class="logo__icon" alt="logo-icon">
         </div>
         <!--переключатель переделай, мы ж не просто рисует, тут по идее будет логика-->
         <div class="lang-switcher navbar__lang-switcher">
           <p class="lang-switcher__title">En</p>
           <div class="lang-switcher__icon">
-            <img src="./assets/arrow-down.svg" alt="">
+            <img src="./assets/arrow-down.svg" alt="arrow-icon">
           </div>
         </div>
       </div>
@@ -21,50 +20,48 @@
           <a href="" class="menu__item">Benefits</a>
           <a href="" class="menu__item">Contact</a>
         </nav>
-        <!--button navbar__button не ясно, зачем такие классы для div и еще внутри p вставлять если это кнопка-->
-        <div class="button navbar__button">
-          <!--и еще отдельный клас для p зачем-->
-          <p class="button__title">Buy Now</p>
-        </div>
+        <button class="button navbar__button">
+          Buy Now
+        </button>
       </div>
-<!--никаких пробелов-->
-
     </div>
     <div class="main header__main">
       <div class="main__left">
-        <!--span как модификатор???-->
-        <!--зачем писать капсом если есть text-transform-->
-        <!--перенеси со вложеностью для читабельности-->
-        <h1 class="main__title">THE NEW START OF <br> <span class="main__title-span">VR LOCOMOTION</span></h1>
-        <div class="main__info">
-          <!--переносы - стринга должны быть читабельна-->
-          <!--в БЕМ допустима двойная сложеность, main__subtitle это уже 3я-->
-          <!--subtitle в теге p? тогда это не subtitle а просто текст-->
-          <p class="main__subtitle">Discover the most comprehensive VR Locomotion system, and unlock infinite motion in
+        <h1 class="main__title">The new start of <br>
+          <span class="main__title-blue">vr locomotion</span>
+        </h1>
+        <div class="main__info info">
+          <p class="info__text">
+            Discover the most comprehensive VR Locomotion system, and unlock infinite motion in
             any games on any platforms!
           </p>
-          <!--вложеность так же-->
-          <!--стринга на новую строку-->
-          <p class="main__price">1200$
+          <p class="info__text-light">
+            1200$
           </p>
-          <div class="main__button">
-            <!--алт-->
-            <!--img не может использоваться как модификация (это не строна, цвет или положение)-->
-            <img src="./assets/play-btn.svg" class="main__button-img" alt="">
+          <div class="info__button">
+            <img src="./assets/play-btn.svg" class="info__button-image" alt="Button play video">
           </div>
         </div>
-
-<!--все проблеы убери или сделай их логичными (разбивай блоки)-->
       </div>
       <div class="main__right">
-        <!--алт-->
-        <img src="./assets/header__image.svg" class="main__image" alt="">
+        <img src="./assets/header__image.svg" class="main__image" alt="Image of car tires">
       </div>
-
     </div>
-    <div class="header__footer">
-
+    <div class="bottom header__bottom">
+      <div class="bottom__left">
+        <p class="bottom__item">FAQ</p>
+        <p class="bottom__item">Help</p>
+      </div>
+      <div class="bottom__center">
+        <p class="bottom__item bottom__item-blue">More</p>
+        <div class="bottom__center-icon">
+          <img src="./assets/arrow-down.svg" alt="arrow-icon">
+        </div>
+      </div>
+      <div class="bottom__right">
+        <p class="bottom__item bottom__item-selected">Previous</p>
+        <p class="bottom__item">Next</p>
+      </div>
     </div>
   </div>
-
 </header>
