@@ -1,5 +1,5 @@
 .header {
-  background: url("/assets/header-background.png") no-repeat;
+  background: url("../../assets/header-background.png") no-repeat;// вот такой урл должен быть, а был /assets/header-background.png
   background-size: cover;
 
   &__body {
